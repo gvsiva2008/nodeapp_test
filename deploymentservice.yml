@@ -18,7 +18,7 @@ spec:
       - name: nodeserver
         image: gvsiva2008/nodeapp:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 2000
         
         
 ---
@@ -33,6 +33,6 @@ spec:
   type: NodePort
   ports:
   - protocol: TCP
-    port: 5000
-    targetPort: 3000
-    nodePort: 31110
+    port: 2000
+    targetPort: 8000
+    nodePort: 31120
