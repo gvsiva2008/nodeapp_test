@@ -6,11 +6,6 @@ pipeline {
         sh 'git clone https://github.com/gvsiva2008/nodeapp_test.git'
       }
 	}
-	stage("build ") {
-      steps {     
-        sh 'mvn clean install'
-      }
-    }
     stage("Build Image") {
       steps {     
 	sh 'whoami'      
