@@ -3,7 +3,7 @@ pipeline {
   stages {
 	stage("Checkout") {
       steps {
-        sh 'git clone https://github.com/gvsiva2008/nodeapp_test.git 
+        sh 'git clone https://github.com/gvsiva2008/nodeapp_test.git'
       }
 	}
 	stage("build ") {
